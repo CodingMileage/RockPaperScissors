@@ -39,6 +39,15 @@ function round(playerSelection, computerSelection) {
     }
 }
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(round(playerSelection, computerSelection));
+
+function game() {
+    for (i = 0; i < 5; i++) {
+        computerSelection = getComputerChoice();
+        console.log(round(playerSelection, computerSelection))
+    }
+}
+
+
+let playerSelection = "rock";
+let computerSelection = getComputerChoice();
+game();

@@ -2,39 +2,36 @@ function getComputerChoice() {
     const cpu = ['rock', 'paper', 'scissors']
 
     const random = Math.floor(Math.random() * cpu.length);
-    console.log(random, cpu[random]);
 
     return cpu[random];
 }
 
-// console.log(getComputerChoice())
-
 function round(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
-        return 'Its a tie!';
+        return 'Its a tie!\nYou both chose '+ playerSelection;
     }
 
     if (playerSelection === 'rock') {
         if (computerSelection === 'paper') {
-            return 'You lose!';
+            return 'You lose!\nCPU chose ' + computerSelection;
         } else if (computerSelection === 'scissors') {
-            return 'You win!';
+            return 'You win!\nCPU chose ' + computerSelection;
         }
     }
 
     if (playerSelection === 'paper'){
         if (computerSelection === 'rock') {
-            return 'You win!';
+            return 'You win!\nCPU chose ' + computerSelection;
         } else if (computerSelection === 'scissors') {
-            return 'You lose!';
+            return 'You lose!\nCPU chose ' + computerSelection;
         }
     }
 
     if (playerSelection === 'scissors') {
         if (computerSelection === 'paper') {
-            return 'You win!';
+            return 'You win!\nCPU chose ' + computerSelection;
         } else if (computerSelection === 'rock') {
-            return 'You lose!';
+            return 'You lose!\nCPU chose ' + computerSelection;
         }
     }
 }
@@ -48,6 +45,7 @@ function game() {
 }
 
 
-let playerSelection = "rock";
+let user = prompt("Rock, Paper or Scissors: ");
+let playerSelection = user.toLowerCase();
 let computerSelection = getComputerChoice();
 game();

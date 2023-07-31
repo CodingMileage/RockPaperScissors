@@ -1,0 +1,39 @@
+* {
+    background-color: darkslategray;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    /* scale: 1.3; */
+    margin-top: 60px;
+    /* border: 2px solid; */
+}
+
+.btn {
+    color: aliceblue;
+    border-radius: 7px;
+    /* font-size: 50px; */
+    border: 2px solid;
+    scale: 2.5;
+}
+
+.btn:hover {
+    background-color: brown;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: center;
+    /* border: 2px solid; */
+}
+
